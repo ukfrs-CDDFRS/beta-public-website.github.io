@@ -1,0 +1,27 @@
+{
+  "main": [
+    { "text": "Home", "url": "/" },
+    { "text": "Home Safety", "url": "/home-fire-safety/" },
+    { "text": "Outdoors", "url": "/outdoor-fire/" }, 
+    { "text": "Business and Landlords", "url": "/business-fire-safety/" },
+    { "text": "News", "url": "/news/" },
+    { "text": "About Us", "url": "/about/" },
+    { "text": "Contact", "url": "/contact/" }
+  ],
+  "footer": [
+    { "text": "Home", "url": "/" },
+    { "text": "Home Safety", "url": "/home-fire-safety/" },
+    { "text": "Outdoors", "url": "/outdoor-fire/" }, 
+    { "text": "Business and Landlords", "url": "/business-fire-safety/" },  
+    { "text": "Careers", "url": "/careers/" },
+    { "text": "Performance Data", "url": "/statistics/" },
+    { "text": "Contracts", "url": "/contracts/" },
+    { "text": "Accessibility", "url": "/accessibility-statement/" },
+    { "text": "Contact", "url": "/contact/" }
+  ],
+  "footerSecondary": [
+    { "text": "Cookies", "url": "/cookies/" },
+    { "text": "Privacy", "url": "/privacy/" },
+    { "text": "Accessibility Statement", "url": "/accessibility-statement/" }
+  ]
+}
