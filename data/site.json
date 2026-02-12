@@ -2,7 +2,7 @@
   "name": "County Durham and Darlington Fire and Rescue Service",
   "shortName": "CDDFRS",
   "description": "County Durham and Darlington Fire and Rescue Service - keeping you safe through prevention, protection and emergency response.",
-  "baseurl": "",
+  "baseurl": "/beta-public-website",
   "url": "https://www.ddfire.gov.uk",
   "phase": "beta",
   "department": "Fire and Rescue",
