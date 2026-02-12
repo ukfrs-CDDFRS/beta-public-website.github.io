@@ -44,3 +44,91 @@ content:
 media:
   input: public/media
   output: /media
+  
+# Editable JSON files
+content:
+  - name: site-settings
+    label: Site Settings
+    path: src/data/site.json
+    type: file
+    fields:
+      - name: name
+        label: Service Name
+        type: string
+      - name: shortName
+        label: Short Name
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: baseurl
+        label: Base URL
+        type: string
+      - name: url
+        label: Website URL
+        type: string
+      - name: phase
+        label: Phase
+        type: string
+      - name: department
+        label: Department
+        type: string
+      - name: organisation
+        label: Organisation
+        type: string
+      - name: MAIN_ContactEmail
+        label: Main Contact Email
+        type: string
+      - name: MAIN_ContactPhone
+        label: Main Contact Phone
+        type: string
+      # Add more fields as needed
+  - name: redirects
+    label: Redirects
+    path: src/data/redirects.json
+    type: file
+    fields:
+      - name: short
+        label: Short
+        type: string
+      - name: long
+        label: Long
+        type: string
+      - name: path
+        label: Path
+        type: string
+  - name: navigation
+    label: Navigation
+    path: src/data/navigation.json
+    type: file
+    fields:
+      - name: main
+        label: Main Navigation
+        type: list
+        fields:
+          - name: text
+            label: Text
+            type: string
+          - name: url
+            label: URL
+            type: string
+      - name: footer
+        label: Footer Navigation
+        type: list
+        fields:
+          - name: text
+            label: Text
+            type: string
+          - name: url
+            label: URL
+            type: string
+      - name: footerSecondary
+        label: Footer Secondary Navigation
+        type: list
+        fields:
+          - name: text
+            label: Text
+            type: string
+          - name: url
+            label: URL
+            type: string
