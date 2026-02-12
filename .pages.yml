@@ -83,15 +83,19 @@ content:
     path: src/data/redirects.json
     type: file
     fields:
-      - name: short
-        label: Short
-        type: string
-      - name: long
-        label: Long
-        type: string
-      - name: path
-        label: Path
-        type: string
+      - name: redirects
+        label: Redirect List
+        type: list
+        fields:
+          - name: short
+            label: Short
+            type: string
+          - name: long
+            label: Long
+            type: string
+          - name: path
+            label: Path
+            type: string
   - name: navigation
     label: Navigation
     path: src/data/navigation.json
