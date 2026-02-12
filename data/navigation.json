@@ -1,27 +1,27 @@
 {
   "main": [
-    { "text": "Home", "url": "/" },
-    { "text": "Home Safety", "url": "/home-fire-safety/" },
-    { "text": "Outdoors", "url": "/outdoor-fire/" }, 
-    { "text": "Business and Landlords", "url": "/business-fire-safety/" },
-    { "text": "News", "url": "/news/" },
-    { "text": "About Us", "url": "/about/" },
-    { "text": "Contact", "url": "/contact/" }
+    { "text": "Home", "url": "{{ site.baseurl }}" },
+    { "text": "Home Safety", "url": "{{ site.baseurl }}/home-fire-safety/" },
+    { "text": "Outdoors", "url": "{{ site.baseurl }}/outdoor-fire/" }, 
+    { "text": "Business and Landlords", "url": "{{ site.baseurl }}/business-fire-safety/" },
+    { "text": "News", "url": "{{ site.baseurl }}/news/" },
+    { "text": "About Us", "url": "{{ site.baseurl }}/about/" },
+    { "text": "Contact", "url": "{{ site.baseurl }}/contact/" }
   ],
   "footer": [
-    { "text": "Home", "url": "/" },
-    { "text": "Home Safety", "url": "/home-fire-safety/" },
-    { "text": "Outdoors", "url": "/outdoor-fire/" }, 
-    { "text": "Business and Landlords", "url": "/business-fire-safety/" },  
-    { "text": "Careers", "url": "/careers/" },
-    { "text": "Performance Data", "url": "/statistics/" },
-    { "text": "Contracts", "url": "/contracts/" },
-    { "text": "Accessibility", "url": "/accessibility-statement/" },
-    { "text": "Contact", "url": "/contact/" }
+    { "text": "Home", "url": "{{ site.baseurl }}/" },
+    { "text": "Home Safety", "url": "{{ site.baseurl }}/home-fire-safety/" },
+    { "text": "Outdoors", "url": "{{ site.baseurl }}/outdoor-fire/" }, 
+    { "text": "Business and Landlords", "url": "{{ site.baseurl }}/business-fire-safety/" },  
+    { "text": "Careers", "url": "{{ site.baseurl }}/careers/" },
+    { "text": "Performance Data", "url": "{{ site.baseurl }}/statistics/" },
+    { "text": "Contracts", "url": "{{ site.baseurl }}/contracts/" },
+    { "text": "Accessibility", "url": "{{ site.baseurl }}/accessibility-statement/" },
+    { "text": "Contact", "url": "{{ site.baseurl }}/contact/" }
   ],
   "footerSecondary": [
-    { "text": "Cookies", "url": "/cookies/" },
-    { "text": "Privacy", "url": "/privacy/" },
-    { "text": "Accessibility Statement", "url": "/accessibility-statement/" }
+    { "text": "Cookies", "url": "{{ site.baseurl }}/cookies/" },
+    { "text": "Privacy", "url": "{{ site.baseurl }}/privacy/" },
+    { "text": "Accessibility Statement", "url": "{{ site.baseurl }}/accessibility-statement/" }
   ]
 }
