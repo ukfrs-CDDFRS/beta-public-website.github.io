@@ -1,0 +1,46 @@
+# Pages CMS configuration for CDDFRS Website
+content:
+  - name: news
+    label: News Posts
+    path: src/pages/news/posts
+    filename: '{year}-{month}-{day}-{fields.title}.md'
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: date
+        label: Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: body
+        label: Body
+        type: rich-text
+  - name: pages
+    label: Site Pages
+    path: src/pages
+    filename: '{fields.title}.md'
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+  - name: stations
+    label: Fire Stations
+    path: src/pages/about/stations
+    filename: '{fields.name}.md'
+    type: collection
+    fields:
+      - name: name
+        label: Station Name
+        type: string
+      - name: body
+        label: Description
+        type: rich-text
+media:
+  input: public/media
+  output: /media
