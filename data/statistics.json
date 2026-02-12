@@ -1,0 +1,44 @@
+{
+  "lastUpdated": "2026-02-01",
+  "period": "Q4 2025",
+  "summary": {
+    "totalTransactions": 1245678,
+    "digitalUptake": 87.3,
+    "userSatisfaction": 92.1,
+    "costPerTransaction": 2.34
+  },
+  "monthlyStats": [
+    { "month": "October 2025", "transactions": 398234, "satisfaction": 91.2, "digitalUptake": 86.1 },
+    { "month": "November 2025", "transactions": 412890, "satisfaction": 92.5, "digitalUptake": 87.8 },
+    { "month": "December 2025", "transactions": 434554, "satisfaction": 92.6, "digitalUptake": 88.0 }
+  ],
+  "serviceBreakdown": [
+    { "service": "Apply for a licence", "transactions": 523456, "satisfaction": 94.2, "avgTime": "4 minutes" },
+    { "service": "Report an issue", "transactions": 312789, "satisfaction": 89.1, "avgTime": "2 minutes" },
+    { "service": "Check status", "transactions": 289433, "satisfaction": 93.5, "avgTime": "1 minute" },
+    { "service": "Request information", "transactions": 120000, "satisfaction": 91.8, "avgTime": "3 minutes" }
+  ],
+  "trends": {
+    "transactionsChange": "+12.5%",
+    "transactionsDirection": "up",
+    "satisfactionChange": "+2.1%",
+    "satisfactionDirection": "up",
+    "digitalChange": "+4.3%",
+    "digitalDirection": "up",
+    "costChange": "-8.2%",
+    "costDirection": "down"
+  },
+  "chartData": {
+    "labels": ["Oct", "Nov", "Dec"],
+    "datasets": [
+      {
+        "label": "Transactions (thousands)",
+        "data": [398, 413, 435]
+      },
+      {
+        "label": "Satisfaction (%)",
+        "data": [91.2, 92.5, 92.6]
+      }
+    ]
+  }
+}
