@@ -51,45 +51,31 @@
   
   
     
-<div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on County Durham and Darlington Fire and Rescue Service" data-module="app-cookie-banner" hidden>
+<div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on County Durham and Darlington Fire and Rescue Service" data-module="govuk-cookie-banner" hidden>
   <div class="govuk-cookie-banner__message govuk-width-container">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <h2 class="govuk-cookie-banner__heading govuk-heading-m">Cookies on County Durham and Darlington Fire and Rescue Service</h2>
-        
         <div class="govuk-cookie-banner__content">
           <p class="govuk-body">We use some essential cookies to make this service work.</p>
           <p class="govuk-body">We'd also like to use analytics cookies so we can understand how you use the service and make improvements.</p>
         </div>
-      </div>
-    </div>
-    
-    <div class="govuk-button-group">
-        <form id="cookie-consent-form">
-          <fieldset class="govuk-fieldset">
-            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">Do you want to accept analytics cookies?</legend>
-            <div class="govuk-button-group">
-              <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="analytics-yes">Yes</button>
-              <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="analytics-no">No</button>
-            </div>
-          </fieldset>
-          <fieldset class="govuk-fieldset govuk-!-margin-top-4">
-            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">Do you want to accept communications and marketing cookies?</legend>
-            <div class="govuk-button-group">
-              <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="marketing-yes">Yes</button>
-              <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="marketing-no">No</button>
-            </div>
-          </fieldset>
-        </form>
-        <div class="govuk-button-group govuk-!-margin-top-4">
+        <div class="govuk-button-group">
+          <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-banner-accept>
+            Accept analytics cookies
+          </button>
+          <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-banner-reject>
+            Reject analytics cookies
+          </button>
           <a class="govuk-link" href="/beta-public-website/cookies/">View cookies</a>
         </div>
       </div>
+    </div>
   </div>
 </div>
 
 
-<div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on County Durham and Darlington Fire and Rescue Service" data-module="app-cookie-confirmation" hidden>
+<div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on County Durham and Darlington Fire and Rescue Service" data-module="govuk-cookie-confirmation" hidden>
   <div class="govuk-cookie-banner__message govuk-width-container">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
@@ -98,7 +84,6 @@
         </div>
       </div>
     </div>
-    
     <div class="govuk-button-group">
       <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-hide>
         Hide cookie message
@@ -367,6 +352,18 @@
     Find out how to manage cookies from the <a href="https://ico.org.uk/for-the-public/online/cookies/" class="govuk-link" rel="noopener noreferrer" target="_blank">Information Commissioner's Office</a>.
   </p>
 </div>
+<div id="cookie-notification" class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner" style="display:none;">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Success
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">
+      You’ve set your cookie preferences. <a class="govuk-notification-banner__link" href="#">Go back to the page you were looking at</a>.
+    </p>
+  </div>
+</div>
 <h2>What are cookies?</h2>
 <p>Cookies are small files saved on your device to help the website function and improve your experience.</p>
 <h2>Types of cookies we use</h2>
@@ -389,19 +386,59 @@
     </tr>
   </tbody>
 </table>
-<h3>Analytics cookies (optional)</h3>
-<p>We use Google Analytics software to understand how people use the ddfire.gov.uk website. We do this to help make sure the site is meeting the needs of its users and to help us make improvements.</p>
-<p>We do not collect or store your personal information (for example your name or address) so this information cannot be used to identify who you are.</p>
-<p>We do not allow Google to use or share our analytics data.</p>
-<p>Google Analytics stores information about:</p>
-<ul class="govuk-list govuk-list--bullet">
-  <li>the pages you visit</li>
-  <li>how long you spend on each page</li>
-  <li>how you arrived at the site</li>
-  <li>what you click on while you visit the site</li>
-  <li>the device and browser you use</li>
-</ul>
-<h4>Analytics cookies we use</h4>
+<div class="govuk-grid-row govuk-!-margin-top-6">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l">Change your cookie settings</h2>
+    <form id="cookie-preferences-form" novalidate>
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+            Do you want to accept analytics cookies?
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="cookies-analytics" name="cookies[analytics]" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="cookies-analytics">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="cookies-analytics-2" name="cookies[analytics]" type="radio" value="no" checked>
+              <label class="govuk-label govuk-radios__label" for="cookies-analytics-2">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+            Do you want to accept communications and marketing cookies?
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="cookies-marketing" name="cookies[marketing]" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="cookies-marketing">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="cookies-marketing-2" name="cookies[marketing]" type="radio" value="no" checked>
+              <label class="govuk-label govuk-radios__label" for="cookies-marketing-2">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Save cookie settings
+      </button>
+    </form>
+  </div>
+</div>
+<h2>Analytics cookies we use</h2>
 <table class="govuk-table">
   <thead>
     <tr>
@@ -423,16 +460,7 @@
     </tr>
   </tbody>
 </table>
-<div class="govuk-form-group govuk-!-margin-top-4">
-  <label class="govuk-label govuk-!-font-weight-bold">Do you want to accept analytics cookies?</label>
-  <div class="govuk-button-group">
-    <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="analytics-yes">Yes</button>
-    <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="analytics-no">No</button>
-  </div>
-</div>
-<h3>Marketing and Communications Cookies</h3>
-<p>These cookies may be set by third party websites and do things like measure how you view YouTube videos.</p>
-<h4>Marketing and Communications cookies we use</h4>
+<h2>Marketing and Communications cookies we use</h2>
 <table class="govuk-table">
   <thead>
     <tr>
@@ -449,13 +477,6 @@
     </tr>
   </tbody>
 </table>
-<div class="govuk-form-group govuk-!-margin-top-4">
-  <label class="govuk-label govuk-!-font-weight-bold">Do you want to accept communications and marketing cookies?</label>
-  <div class="govuk-button-group">
-    <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="marketing-yes">Yes</button>
-    <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="marketing-no">No</button>
-  </div>
-</div>
 <h2>Changing your cookie settings</h2>
 <p class="govuk-body">
   You can change your cookie preferences at any time.
@@ -468,6 +489,16 @@
 <p class="govuk-body">
   For more details, see our privacy policy.
 </p>
+<script>
+document.getElementById('cookie-preferences-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  var notification = document.getElementById('cookie-notification');
+  if (notification) {
+    notification.style.display = 'block';
+    notification.scrollIntoView({behavior: 'smooth'});
+  }
+});
+</script>
 
       
     </div>
