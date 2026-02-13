@@ -45,7 +45,7 @@
         "name": "Bishop Auckland Community Fire Station",
         "address": "Green Lane, Bishop Auckland, DL14 6RS",
         "postcode": "DL14 6RS",
-        "what3words": "///sleeps.cupboard.sweeper",
+        "what3words": "///boil.most.money",
         "location": {
             "latitude": 54.666,
             "longitude": -1.676,
@@ -85,7 +85,7 @@
         "name": "Consett Community Fire Station",
         "address": "Front Street, Consett, DH8 5QF",
         "postcode": "DH8 5QF",
-        "what3words": "///sleeps.cupboard.sweeper",
+        "what3words": "///dragon.lamp.frosted",
         "location": {
             "latitude": 54.85,
             "longitude": -1.83,
@@ -125,12 +125,12 @@
         "name": "Crook Fire Station",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///call.eruptions.length",
         "location": {
-            "latitude": 416119,
-            "longitude": 535208,
-            "Easting": null,
-            "Northing": null
+            "latitude": null,
+            "longitude": null,
+            "Easting": 416119,
+            "Northing": 535208
         },
         "services": [
             "Fire Station"
@@ -164,7 +164,7 @@
         "name": "Darlington Fire Station",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///crib.actor.trips",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -204,7 +204,7 @@
         "name": "Durham Fire Station",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///subject.grumbles.angle",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -245,7 +245,7 @@
         "name": "High Handenhold Fire Station",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///driveway.girder.exploring",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -285,7 +285,7 @@
         "name": "Middleton-in-Teesdale Fire Station",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///ecologist.dodges.gems",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -325,7 +325,7 @@
         "name": "Newton Aycliffe Fire Station",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///hook.cloth.builds",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -366,7 +366,7 @@
         "name": "Peterlee Fire Station",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///future.stud.vase",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -405,7 +405,7 @@
         "name": "Seaham Fire Station",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///scored.proves.unframed",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -445,7 +445,7 @@
         "name": "Sedgefield Fire Station",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///clearly.menswear.spurted",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -484,7 +484,7 @@
         "name": "Spennymoor Community Fire Station",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///swims.motoring.arena",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -523,7 +523,7 @@
         "name": "Stanhope Fire Station",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///irritated.clipped.vibrating",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -563,7 +563,7 @@
         "name": "Wheatley Hill Fire Station",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///budget.footpath.kitchens",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -602,7 +602,7 @@
         "name": "Service Headquarters",
         "address": null,
         "postcode": null,
-        "what3words": null,
+        "what3words": "///descended.ranks.ranged",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -636,7 +636,7 @@
         "name": "Training Centre",
         "address": "Bowburn Industrial Estate South, Bowburn, Co Durham",
         "postcode": "DH6 5AD",
-        "what3words": null,
+        "what3words": "///earlobes.seaweed.subtitle",
         "location": {
             "latitude": null,
             "longitude": null,
@@ -672,7 +672,7 @@
         "name": "Technical Services",
         "address": "Bowburn Industrial Estate South, Bowburn, Co Durham",
         "postcode": "DH6 5AD",
-        "what3words": null,
+        "what3words": "///taken.tram.thrilled",
         "location": {
             "latitude": null,
             "longitude": null,
