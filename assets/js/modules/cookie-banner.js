@@ -7,57 +7,66 @@ export class CookieBanner {
   constructor(element) {
     this.element = element;
     this.confirmationBanner = document.querySelector('[data-module="app-cookie-confirmation"]');
-    this.analyticsYes = element.querySelector('[data-cookie-choice="analytics-yes"]');
-    this.analyticsNo = element.querySelector('[data-cookie-choice="analytics-no"]');
-    this.marketingYes = element.querySelector('[data-cookie-choice="marketing-yes"]');
-    this.marketingNo = element.querySelector('[data-cookie-choice="marketing-no"]');
+    this.analyticsAccept = element.querySelector('[data-cookie-banner-accept]');
+    this.analyticsReject = element.querySelector('[data-cookie-banner-reject]');
     this.hideButton = this.confirmationBanner?.querySelector('[data-cookie-hide]');
     this.confirmationMessage = this.confirmationBanner?.querySelector('[data-cookie-confirmation-message]');
+    this.analyticsConfig = null;
     this.init();
   }
-  
-  init() {
-    // Check if consent already given
+
+  async init() {
+    // Load analytics config
+    await this.loadAnalyticsConfig();
+    // If consent already given, enable analytics if accepted and config allows
     if (this.hasConsent()) {
+      if (this.getCookie('cookie_consent_analytics') === 'accepted') {
+        this.enableAnalytics();
+      }
       return;
     }
     // Show banner
     this.element.hidden = false;
     // Bind events for analytics
-    this.analyticsYes?.addEventListener('click', () => this.handleChoice('analytics', 'accepted'));
-    this.analyticsNo?.addEventListener('click', () => this.handleChoice('analytics', 'rejected'));
-    // Bind events for marketing
-    this.marketingYes?.addEventListener('click', () => this.handleChoice('marketing', 'accepted'));
-    this.marketingNo?.addEventListener('click', () => this.handleChoice('marketing', 'rejected'));
+    this.analyticsAccept?.addEventListener('click', () => this.handleChoice('analytics', 'accepted'));
+    this.analyticsReject?.addEventListener('click', () => this.handleChoice('analytics', 'rejected'));
     // Hide confirmation
     this.hideButton?.addEventListener('click', () => this.hideConfirmation());
   }
+
+  async loadAnalyticsConfig() {
+    try {
+      const res = await fetch('/src/data/analytics.json');
+      if (res.ok) {
+        this.analyticsConfig = await res.json();
+      } else {
+        this.analyticsConfig = {};
+      }
+    } catch (e) {
+      this.analyticsConfig = {};
+    }
+  }
   
   hasConsent() {
-    return document.cookie.includes('cookie_consent_analytics=') && document.cookie.includes('cookie_consent_marketing=');
+    return document.cookie.includes('cookie_consent_analytics=');
   }
   
   handleChoice(type, value) {
-    // Set cookie for the type
-    document.cookie = `cookie_consent_${type}=${value}; max-age=31536000; path=/; SameSite=Lax`;
-    // Hide main banner if both choices made
-    const analyticsConsent = document.cookie.includes('cookie_consent_analytics=');
-    const marketingConsent = document.cookie.includes('cookie_consent_marketing=');
-    if (analyticsConsent && marketingConsent) {
-      this.element.hidden = true;
-      // Show confirmation
-      if (this.confirmationBanner && this.confirmationMessage) {
-        let analytics = this.getCookie('cookie_consent_analytics');
-        let marketing = this.getCookie('cookie_consent_marketing');
-        let message = `You have ${analytics === 'accepted' ? 'accepted' : 'rejected'} analytics cookies and ${marketing === 'accepted' ? 'accepted' : 'rejected'} communications and marketing cookies. You can <a href="/cookies/" class="govuk-link">change your cookie settings</a> at any time.`;
-        this.confirmationMessage.innerHTML = message;
-        this.confirmationBanner.hidden = false;
-        this.confirmationBanner.focus();
-      }
-      // Trigger analytics if accepted (placeholder)
-      if (type === 'analytics' && value === 'accepted') {
-        this.enableAnalytics();
-      }
+    // Set cookie for analytics only
+    document.cookie = `cookie_consent_analytics=${value}; max-age=31536000; path=/; SameSite=Lax`;
+    // Hide main banner
+    this.element.hidden = true;
+    // Show confirmation
+    if (this.confirmationBanner && this.confirmationMessage) {
+      let analytics = this.getCookie('cookie_consent_analytics');
+      let message = `You have ${analytics === 'accepted' ? 'accepted' : 'rejected'} analytics cookies. You can <a href="/cookies/" class="govuk-link">change your cookie settings</a> at any time.`;
+      this.confirmationMessage.innerHTML = message;
+      this.confirmationBanner.hidden = false;
+      this.confirmationBanner.focus();
+    }
+    // Trigger analytics if accepted
+    if (type === 'analytics' && value === 'accepted') {
+      this.enableAnalytics();
     }
   }
   
@@ -73,9 +82,46 @@ export class CookieBanner {
   }
   
   enableAnalytics() {
-    // Placeholder for analytics initialization
-    // In production, this would load your analytics script
-    console.log('Analytics cookies accepted - analytics would be enabled here');
+    // Only inject analytics if config is loaded and enabled
+    if (!this.analyticsConfig) return;
+    // Google Analytics
+    if (this.analyticsConfig.googleAnalytics && this.analyticsConfig.googleAnalytics.enabled && this.analyticsConfig.googleAnalytics.trackingId) {
+      if (!window.gaLoaded) {
+        window.gaLoaded = true;
+        const gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${this.analyticsConfig.googleAnalytics.trackingId}`;
+        document.head.appendChild(gaScript);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', this.analyticsConfig.googleAnalytics.trackingId);
+      }
+    }
+    // Google Tag Manager
+    if (this.analyticsConfig.googleTagManager && this.analyticsConfig.googleTagManager.enabled && this.analyticsConfig.googleTagManager.containerId) {
+      if (!window.gtmLoaded) {
+        window.gtmLoaded = true;
+        const gtmScript = document.createElement('script');
+        gtmScript.async = true;
+        gtmScript.src = `https://www.googletagmanager.com/gtm.js?id=${this.analyticsConfig.googleTagManager.containerId}`;
+        document.head.appendChild(gtmScript);
+      }
+    }
+    // Facebook Pixel (future)
+    if (this.analyticsConfig.facebookPixel && this.analyticsConfig.facebookPixel.enabled && this.analyticsConfig.facebookPixel.pixelId) {
+      if (!window.fbqLoaded) {
+        window.fbqLoaded = true;
+        !(function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
+        })(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        window.fbq('init', this.analyticsConfig.facebookPixel.pixelId);
+        window.fbq('track', 'PageView');
+      }
+    }
   }
 }
 
@@ -85,9 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const banner = document.querySelector('[data-module="app-cookie-banner"]');
   if (changeBtn && banner) {
     changeBtn.addEventListener('click', () => {
-      // Remove consent cookies
+      // Remove consent cookie
       document.cookie = 'cookie_consent_analytics=; max-age=0; path=/; SameSite=Lax';
-      document.cookie = 'cookie_consent_marketing=; max-age=0; path=/; SameSite=Lax';
       // Show banner again
       banner.hidden = false;
       // Optionally hide confirmation if visible

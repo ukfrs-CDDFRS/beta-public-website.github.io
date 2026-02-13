@@ -490,15 +490,44 @@
   For more details, see our privacy policy.
 </p>
 <script>
-document.getElementById('cookie-preferences-form')?.addEventListener('submit', function(e) {
-  e.preventDefault();
-  var notification = document.getElementById('cookie-notification');
-  if (notification) {
-    notification.style.display = 'block';
-    notification.scrollIntoView({behavior: 'smooth'});
-  }
+// Helper to get cookie value
+function getCookie(name) {
+  const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+  return match ? match[2] : null;
+}
+<p>// On page load, set radio to match cookie
+document.addEventListener('DOMContentLoaded', function() {
+const analyticsConsent = getCookie('cookie_consent_analytics');
+if (analyticsConsent) {
+if (analyticsConsent === 'accepted') {
+document.getElementById('cookies-analytics').checked = true;
+} else {
+document.getElementById('cookies-analytics-2').checked = true;
+}
+}
+});</p>
+<p>document.getElementById('cookie-preferences-form')?.addEventListener('submit', function(e) {
+e.preventDefault();
+// Set cookie based on selection
+const analyticsValue = document.querySelector('input[name=&quot;cookies[analytics]&quot;]:checked')?.value;
+if (analyticsValue === 'yes') {
+document.cookie = 'cookie_consent_analytics=accepted; max-age=31536000; path=/; SameSite=Lax';
+} else {
+document.cookie = 'cookie_consent_analytics=rejected; max-age=31536000; path=/; SameSite=Lax';
+}
+// Show notification
+var notification = document.getElementById('cookie-notification');
+if (notification) {
+notification.style.display = 'block';
+notification.scrollIntoView({behavior: 'smooth'});
+}
+// Optionally, update banner if present
+const banner = document.querySelector('[data-module=&quot;app-cookie-banner&quot;]');
+if (banner) {
+banner.hidden = true;
+}
 });
-</script>
+</script></p>
 
       
     </div>
