@@ -451,54 +451,46 @@
     </tr>
   </tbody>
 </table>
-<h2>Changing your cookie settings</h2>
-<p class="govuk-body">
-  You can change your cookie preferences at any time.
-</p>
-<p><button id="change-cookie-settings" class="govuk-button">Change your cookie settings</button></p>
-<p class="govuk-body">
-  When you click the button above, the cookie banner will reappear so you can update your preferences.
-</p>
-<h2>More information</h2>
-<p class="govuk-body">
-  For more details, see our privacy policy.
-</p>
 <script>
 // Helper to get cookie value
 function getCookie(name) {
   const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
   return match ? match[2] : null;
 }
-<p>// On page load, set radio to match cookie
+
+// On page load, set radio to match cookie
 document.addEventListener('DOMContentLoaded', function() {
-const analyticsConsent = getCookie('cookie_consent_analytics');
-const yesRadio = document.getElementById('cookies-analytics-yes');
-const noRadio = document.getElementById('cookies-analytics-no');
-yesRadio.checked = false;
-noRadio.checked = false;
-if (analyticsConsent === 'accepted') {
-yesRadio.checked = true;
-} else if (analyticsConsent === 'rejected') {
-noRadio.checked = true;
-}
-});</p>
-<p>document.getElementById('cookie-preferences-form')?.addEventListener('submit', function(e) {
-e.preventDefault();
-const analyticsValue = document.querySelector('input[name=&quot;cookies-analytics&quot;]:checked')?.value;
-if (!analyticsValue) return;
-if (analyticsValue === 'yes') {
-document.cookie = 'cookie_consent_analytics=accepted; max-age=31536000; path=/; SameSite=Lax';
-} else {
-document.cookie = 'cookie_consent_analytics=rejected; max-age=31536000; path=/; SameSite=Lax';
-}
-// Show notification
-var notification = document.getElementById('cookie-notification');
-if (notification) {
-notification.style.display = 'block';
-notification.scrollIntoView({behavior: 'smooth'});
-}
+  const analyticsConsent = getCookie('cookie_consent_analytics');
+  const yesRadio = document.getElementById('cookies-analytics-yes');
+  const noRadio = document.getElementById('cookies-analytics-no');
+  // Always clear both first
+  yesRadio.checked = false;
+  noRadio.checked = false;
+  if (analyticsConsent === 'accepted') {
+    yesRadio.checked = true;
+  } else if (analyticsConsent === 'rejected') {
+    noRadio.checked = true;
+  } // else leave both blank
 });
-</script></p>
+
+document.getElementById('cookie-preferences-form')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const analyticsValue = document.querySelector('input[name="cookies-analytics"]:checked')?.value;
+  if (!analyticsValue) return;
+  if (analyticsValue === 'yes') {
+    document.cookie = 'cookie_consent_analytics=accepted; max-age=31536000; path=/; SameSite=Lax';
+  } else {
+    document.cookie = 'cookie_consent_analytics=rejected; max-age=31536000; path=/; SameSite=Lax';
+  }
+  // Show notification
+  var notification = document.getElementById('cookie-notification');
+  if (notification) {
+    notification.style.display = 'block';
+    notification.scrollIntoView({behavior: 'smooth'});
+  }
+});
+</script>
+</script>
 
       
     </div>
