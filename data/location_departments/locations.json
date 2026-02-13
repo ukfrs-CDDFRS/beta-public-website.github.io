@@ -10,8 +10,6 @@
             "Easting": 405437,
             "Northing": 516475
         },
-        "phone": "01833 695 487",
-        "email": null,
         "services": [
             "Fire Station",
             "Ambulance Station",
@@ -25,7 +23,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additional information": "Barnard Castle Emergency Services is a shared facility that houses the fire station, ambulance station, police station, and mountain rescue station for the Barnard Castle area. The fire station operates on a Retained Duty System (RDS) basis, meaning that firefighters are on call and respond to emergencies as needed. The facility is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contact information": {
+            "phone": "01833 695 487",
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/barnard_castle_emergency_services.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/h6YdQK7xGrY?si=yHtYB5JpYwoCwJjM"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "BA": {
         "name": "Bishop Auckland Community Fire Station",
