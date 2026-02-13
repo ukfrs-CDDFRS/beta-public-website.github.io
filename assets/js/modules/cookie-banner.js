@@ -127,10 +127,21 @@ export class CookieBanner {
   }
 }
 
-// Allow reopening the cookie banner from the cookies page
+// Debug: log cookie state and banner initialization
 document.addEventListener('DOMContentLoaded', () => {
   const changeBtn = document.getElementById('change-cookie-settings');
-  const banner = document.querySelector('[data-module="app-cookie-banner"]');
+  const banner = document.querySelector('[data-module="govuk-cookie-banner"]');
+  console.log('CookieBanner: cookie_consent_analytics =', document.cookie);
+  if (banner) {
+    console.log('CookieBanner: Banner element found, initializing...');
+    try {
+      new CookieBanner(banner);
+    } catch (e) {
+      console.error('CookieBanner: Error initializing banner', e);
+    }
+  } else {
+    console.warn('CookieBanner: Banner element NOT found');
+  }
   if (changeBtn && banner) {
     changeBtn.addEventListener('click', () => {
       // Remove consent cookie
@@ -138,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Show banner again
       banner.hidden = false;
       // Optionally hide confirmation if visible
-      const confirmation = document.querySelector('[data-module="app-cookie-confirmation"]');
+      const confirmation = document.querySelector('[data-module="govuk-cookie-confirmation"]');
       if (confirmation) confirmation.hidden = true;
       // Move focus for accessibility
       banner.focus();

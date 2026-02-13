@@ -498,12 +498,15 @@ function getCookie(name) {
 <p>// On page load, set radio to match cookie
 document.addEventListener('DOMContentLoaded', function() {
 const analyticsConsent = getCookie('cookie_consent_analytics');
-if (analyticsConsent) {
+const yesRadio = document.getElementById('cookies-analytics');
+const noRadio = document.getElementById('cookies-analytics-2');
+// Clear both first
+yesRadio.checked = false;
+noRadio.checked = false;
 if (analyticsConsent === 'accepted') {
-document.getElementById('cookies-analytics').checked = true;
-} else {
-document.getElementById('cookies-analytics-2').checked = true;
-}
+yesRadio.checked = true;
+} else if (analyticsConsent === 'rejected') {
+noRadio.checked = true;
 }
 });</p>
 <p>document.getElementById('cookie-preferences-form')?.addEventListener('submit', function(e) {
