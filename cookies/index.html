@@ -515,9 +515,14 @@ e.preventDefault();
 const analyticsValue = document.querySelector('input[name=&quot;cookies[analytics]&quot;]:checked')?.value;
 if (analyticsValue === 'yes') {
 document.cookie = 'cookie_consent_analytics=accepted; max-age=31536000; path=/; SameSite=Lax';
-} else {
+} else if (analyticsValue === 'no') {
 document.cookie = 'cookie_consent_analytics=rejected; max-age=31536000; path=/; SameSite=Lax';
 }
+// Update radio state after setting cookie
+const yesRadio = document.getElementById('cookies-analytics');
+const noRadio = document.getElementById('cookies-analytics-2');
+yesRadio.checked = analyticsValue === 'yes';
+noRadio.checked = analyticsValue === 'no';
 // Show notification
 var notification = document.getElementById('cookie-notification');
 if (notification) {
@@ -525,7 +530,7 @@ notification.style.display = 'block';
 notification.scrollIntoView({behavior: 'smooth'});
 }
 // Optionally, update banner if present
-const banner = document.querySelector('[data-module=&quot;app-cookie-banner&quot;]');
+const banner = document.querySelector('[data-module=&quot;govuk-cookie-banner&quot;]');
 if (banner) {
 banner.hidden = true;
 }
