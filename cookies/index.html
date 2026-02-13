@@ -513,6 +513,15 @@ noRadio.checked = true;
 e.preventDefault();
 // Set cookie based on selection
 const analyticsValue = document.querySelector('input[name=&quot;cookies[analytics]&quot;]:checked')?.value;
+const marketingValue = document.querySelector('input[name=&quot;cookies[marketing]&quot;]:checked')?.value;
+// Compose the policy object as per GOV.UK pattern
+const policy = {
+analytics: analyticsValue === 'yes',
+marketing: marketingValue === 'yes',
+essential: true
+};
+document.cookie = 'design_system_cookies_policy=' + encodeURIComponent(JSON.stringify(policy)) + '; max-age=31536000; path=/; SameSite=Lax';
+// For compatibility, also set the old cookie_consent_analytics cookie
 if (analyticsValue === 'yes') {
 document.cookie = 'cookie_consent_analytics=accepted; max-age=31536000; path=/; SameSite=Lax';
 } else if (analyticsValue === 'no') {
@@ -529,10 +538,21 @@ if (notification) {
 notification.style.display = 'block';
 notification.scrollIntoView({behavior: 'smooth'});
 }
-// Optionally, update banner if present
+// Hide the cookie banner if present
 const banner = document.querySelector('[data-module=&quot;govuk-cookie-banner&quot;]');
 if (banner) {
 banner.hidden = true;
+}
+// Show confirmation banner if present (matches banner logic)
+const confirmation = document.querySelector('[data-module=&quot;govuk-cookie-confirmation&quot;]');
+if (confirmation) {
+confirmation.hidden = false;
+const msg = confirmation.querySelector('[data-cookie-confirmation-message]');
+if (msg) {
+msg.textContent = analyticsValue === 'yes' ?
+'You’ve accepted analytics cookies.' :
+'You’ve rejected analytics cookies.';
+}
 }
 });
 </script></p>
