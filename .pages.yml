@@ -130,5 +130,5 @@ content:
             label: URL
             type: string
 media:
-  input: public/media
+  input: src/assets/images
   output: /media
