@@ -354,13 +354,12 @@
 </div>
 <div id="cookie-notification" class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner" style="display:none;">
   <div class="govuk-notification-banner__header">
-    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-      Success
-    </h2>
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">Success</h2>
   </div>
   <div class="govuk-notification-banner__content">
     <p class="govuk-notification-banner__heading">
-      You’ve set your cookie preferences. <a class="govuk-notification-banner__link" href="#">Go back to the page you were looking at</a>.
+      You’ve set your cookie preferences.
+      <a class="govuk-notification-banner__link" href="#">Go back to the page you were looking at</a>
     </p>
   </div>
 </div>
@@ -380,13 +379,13 @@
   </thead>
   <tbody>
     <tr>
-      <td>design_system_cookies_policy</td>
+      <td>cookie_consent_analytics</td>
       <td>Saves your cookie consent settings</td>
       <td>1 year</td>
     </tr>
   </tbody>
 </table>
-<div class="govuk-grid-row govuk-!-margin-top-6">
+<section class="govuk-!-margin-top-6">
   <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l">Change your cookie settings</h2>
     <form id="cookie-preferences-form" novalidate>
@@ -411,7 +410,7 @@
       <button type="submit" class="govuk-button" data-module="govuk-button">Save cookie settings</button>
     </form>
   </div>
-</div>
+</section>
 <h2>Analytics cookies we use</h2>
 <table class="govuk-table">
   <thead>
@@ -463,14 +462,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const analyticsConsent = getCookie('cookie_consent_analytics');
   const yesRadio = document.getElementById('cookies-analytics-yes');
   const noRadio = document.getElementById('cookies-analytics-no');
-  // Always clear both first
   yesRadio.checked = false;
   noRadio.checked = false;
   if (analyticsConsent === 'accepted') {
     yesRadio.checked = true;
   } else if (analyticsConsent === 'rejected') {
     noRadio.checked = true;
-  } // else leave both blank
+  }
 });
 
 document.getElementById('cookie-preferences-form')?.addEventListener('submit', function(e) {
@@ -487,9 +485,11 @@ document.getElementById('cookie-preferences-form')?.addEventListener('submit', f
   if (notification) {
     notification.style.display = 'block';
     notification.scrollIntoView({behavior: 'smooth'});
+    setTimeout(function() {
+      notification.style.display = 'none';
+    }, 3000);
   }
 });
-</script>
 </script>
 
       
