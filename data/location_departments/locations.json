@@ -24,8 +24,8 @@
         "Purpose": [
             "Response Station"
         ],
-        "Additional information": "Barnard Castle Emergency Services is a shared facility that houses the fire station, ambulance station, police station, and mountain rescue station for the Barnard Castle area. The fire station operates on a Retained Duty System (RDS) basis, meaning that firefighters are on call and respond to emergencies as needed. The facility is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
-        "Contact information": {
+        "Additionalinformation": "Barnard Castle Emergency Services is a shared facility that houses the fire station, ambulance station, police station, and mountain rescue station for the Barnard Castle area. The fire station operates on a Retained Duty System (RDS) basis, meaning that firefighters are on call and respond to emergencies as needed. The facility is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
             "phone": "01833 695 487",
             "email": null
         },
@@ -52,8 +52,6 @@
             "Easting": 420766,
             "Northing": 527566
         },
-        "phone": "01388 602 643",
-        "email": null,
         "services": [
             "Fire Station"
         ],
@@ -65,7 +63,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Bishop Auckland Community Fire Station is a shared facility that houses the fire station for the Bishop Auckland area. The fire station operates on both a Retained Duty System (RDS) and Wholetime (WT) basis, meaning that firefighters are on call and respond to emergencies as needed, while also having a dedicated team of firefighters who are stationed at the facility. The station is owned by the County Durham and Darlington Fire and Rescue Service and is leasehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": "01388 602 643",
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/bishop_auckland_community_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/HQ42ykW1KT0?si=E3UU6uD174LsjM5J"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "CO": {
         "name": "Consett Community Fire Station",
@@ -78,8 +92,6 @@
             "Easting": 411623,
             "Northing": 551595
         },
-        "phone": "01207 502 500",
-        "email": null,
         "services": [
             "Fire Station"
         ],
@@ -91,7 +103,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Consett Community Fire Station is a shared facility that houses the fire station for the Consett area. The fire station operates on both a Retained Duty System (RDS) and Wholetime (WT) basis, meaning that firefighters are on call and respond to emergencies as needed, while also having a dedicated team of firefighters who are stationed at the facility. The station is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": "01207 502 500",
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/consett_community_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/4UFRnyBnkd4?si=HZ3fdo4f5rqY7MT-"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "CK": {
         "name": "Crook Fire Station",
@@ -104,8 +132,6 @@
             "Easting": null,
             "Northing": null
         },
-        "phone": null,
-        "email": null,
         "services": [
             "Fire Station"
         ],
@@ -116,7 +142,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Crook Fire Station is a fire station located in the town of Crook, County Durham. The station operates on a Retained Duty System (RDS) basis, meaning that firefighters are on call and respond to emergencies as needed. The station is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/crook_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/f0cFMfHrRAg?si=YHergC-ZC6HDygfG"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "DL": {
         "name": "Darlington Fire Station",
@@ -129,8 +171,6 @@
             "Easting": 429216,
             "Northing": 514290
         },
-        "phone": null,
-        "email": null,
         "services": [
             "Fire Station",
             "Ambulance Station"
@@ -142,7 +182,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Darlington Fire Station is a shared facility that houses the fire station and ambulance station for the Darlington area. The fire station operates on a Wholetime (WT) basis, meaning that firefighters are stationed at the facility and respond to emergencies as needed. The station is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/darlington_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/earxBbYcZrg?si=rQZehUmo-Agu4jh0"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "DH": {
         "name": "Durham Fire Station",
@@ -155,8 +211,6 @@
             "Easting": 425578,
             "Northing": 544304
         },
-        "phone": null,
-        "email": null,
         "services": [
             "Fire Station",
             "Ambulance Station",
@@ -169,7 +223,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Durham Fire Station is a shared facility that houses the fire station, ambulance station, and mountain rescue station for the Durham area. The fire station operates on a Wholetime (WT) basis, meaning that firefighters are stationed at the facility and respond to emergencies as needed. The station is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/durham_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/M8gcdmfzpPk?si=OzrfO6ao3OAVqe2Z"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "HH": {
         "name": "High Handenhold Fire Station",
@@ -182,8 +252,6 @@
             "Easting": 423420,
             "Northing": 553140
         },
-        "phone": null,
-        "email": null,
         "services": [
             "Fire Station"
         ],
@@ -195,7 +263,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "High Handenhold Fire Station is a fire station located in the High Handenhold area of County Durham. The station operates on both a Retained Duty System (RDS) and Wholetime (WT) basis, meaning that firefighters are on call and respond to emergencies as needed, while also having a dedicated team of firefighters who are stationed at the facility. The station is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/high_handenhold_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/U-jWbtZ2XxU?si=dz12ekr1CL9JRJ1c"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "MT": {
         "name": "Middleton-in-Teesdale Fire Station",
@@ -208,8 +292,6 @@
             "Easting": 395086,
             "Northing": 525187
         },
-        "phone": null,
-        "email": null,
         "services": [
             "Fire Station",
             "Ambulance Station"
@@ -221,7 +303,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Middleton-in-Teesdale Fire Station is a shared facility that houses the fire station and ambulance station for the Middleton-in-Teesdale area. The fire station operates on a Retained Duty System (RDS) basis, meaning that firefighters are on call and respond to emergencies as needed. The station is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/middleton_in_teesdale_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/kC2SaQrhxA8?si=I7XnziKEdFnPagO1"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "NA": {
         "name": "Newton Aycliffe Fire Station",
@@ -234,8 +332,6 @@
             "Easting": 427916,
             "Northing": 525060
         },
-        "phone": null,
-        "email": null,
         "services": [
             "Fire Station",
             "Police Station"
@@ -248,7 +344,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Newton Aycliffe Fire Station is a shared facility that houses the fire station and police station for the Newton Aycliffe area. The fire station operates on both a Day Crewing (DC) and Retained Duty System (RDS) basis, meaning that firefighters are stationed at the facility during the day and respond to emergencies as needed, while also having a team of firefighters who are on call and respond to emergencies outside of regular hours. The station is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/newton_aycliffe_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/zIB3ZA78ZKE?si=YWuuIdxFopfJtjSl"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "PL": {
         "name": "Peterlee Fire Station",
@@ -261,8 +373,6 @@
             "Easting": 441048,
             "Northing": 541066
         },
-        "phone": null,
-        "email": null,
         "services": [
             "Fire Station"
         ],
@@ -273,7 +383,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Peterlee Fire Station is a fire station located in the town of Peterlee, County Durham. The station operates on a Wholetime (WT) basis, meaning that firefighters are stationed at the facility and respond to emergencies as needed. The station is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/peterlee_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/xr9N7kkvNK8?si=crYIpKXvXdO7hK7C"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "SH": {
         "name": "Seaham Fire Station",
@@ -286,8 +412,6 @@
             "Easting": 442560,
             "Northing": 548790
         },
-        "phone": null,
-        "email": null,
         "services": [
             "Fire Station"
         ],
@@ -299,7 +423,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Seaham Fire Station is a fire station located in the town of Seaham, County Durham. The station operates on both a Day Crewing (DC) and Retained Duty System (RDS) basis, meaning that firefighters are stationed at the facility during the day and respond to emergencies as needed, while also having a team of firefighters who are on call and respond to emergencies outside of regular hours. The station is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/seaham_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/LYp-L4Q28IQ?si=lxebmm1_kaS78mN7"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "SF": {
         "name": "Sedgefield Fire Station",
@@ -312,8 +452,6 @@
             "Easting": 435450,
             "Northing": 529100
         },
-        "phone": null,
-        "email": null,
         "services": [
             "Fire Station"
         ],
@@ -324,10 +462,26 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Sedgefield Fire Station is a fire station located in the town of Sedgefield, County Durham. The station operates on a Retained Duty System (RDS) basis, meaning that firefighters are on call and respond to emergencies as needed. The station is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/sedgefield_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/YEKMcACPHls?si=jdfoq2PKrWwqFjNU"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "SM": {
-        "name": "Spennymoor Fire Station",
+        "name": "Spennymoor Community Fire Station",
         "address": null,
         "postcode": null,
         "what3words": null,
@@ -337,8 +491,6 @@
             "Easting": 427201,
             "Northing": 534957
         },
-        "phone": null,
-        "email": null,
         "services": [
             "Fire Station"
         ],
@@ -349,7 +501,23 @@
         "Ownership": "",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Spennymoor Community Fire Station is a fire station located in the town of Spennymoor, County Durham. The station operates on a Wholetime (WT) basis, meaning that firefighters are stationed at the facility and respond to emergencies as needed. The station is owned by the County Durham and Darlington Fire and Rescue Service and is leasehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/spennymoor_community_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/KJm3Ms5H-xI?si=T5XppzB3ufpVL9C8"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "SO": {
         "name": "Stanhope Fire Station",
@@ -362,8 +530,6 @@
             "Easting": 399512,
             "Northing": 539280
         },
-        "phone": null,
-        "email": null,
         "services": [
             "Fire Station",
             "Police Station"
@@ -375,7 +541,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Stanhope Fire Station is a shared facility that houses the fire station and police station for the Stanhope area. The fire station operates on a Retained Duty System (RDS) basis, meaning that firefighters are on call and respond to emergencies as needed. The station is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/stanhope_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/3RGwfxwi5xk?si=0phvjQVBlz2sHAG4"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "WH": {
         "name": "Wheatley Hill Fire Station",
@@ -388,8 +570,6 @@
             "Easting": 437202,
             "Northing": 538428
         },
-        "phone": null,
-        "email": null,
         "services": [
             "Fire Station"
         ],
@@ -400,7 +580,23 @@
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
             "Response Station"
-        ]
+        ],
+        "Additionalinformation": "Wheatley Hill Fire Station is a fire station located in the town of Wheatley Hill, County Durham. The station operates on a Retained Duty System (RDS) basis, meaning that firefighters are on call and respond to emergencies as needed. The station is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a response station for the local community, providing essential emergency services to the area.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/wheatley_hill_fire_station.jpg"
+            },
+            "video": {
+                "video_1": "https://www.youtube.com/embed/9n2s8Xo7l3E?si=0phvjQVBlz2sHAG4"
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "HQ": {
         "name": "Service Headquarters",
@@ -413,14 +609,28 @@
             "Easting": 429935,
             "Northing": 543639
         },
-        "phone": null,
-        "email": null,
         "Tenure": "Leasehold",
         "Ownership": "",
         "Purpose": [
             "Headquarters",
             "Control Room"
-        ]
+        ],
+        "Additionalinformation": "The Service Headquarters is the central administrative and operational hub for the County Durham and Darlington Fire and Rescue Service. It houses the main offices, control room, and other essential facilities for the management and coordination of fire and rescue services across the region. The headquarters is owned by the County Durham and Darlington Fire and Rescue Service and is leasehold. It serves as the command center for emergency response operations, ensuring effective communication and coordination during incidents.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/service_headquarters.jpg"
+            },
+            "video": {
+                "video_1": ""
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "TR": {
         "name": "Training Centre",
@@ -433,8 +643,6 @@
             "Easting": 430034,
             "Northing": 537808
         },
-        "phone": null,
-        "email": null,
         "Tenure": "Freehold",
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
@@ -442,7 +650,23 @@
         ],
         "services": [
             "Training Centre"
-        ]
+        ],
+        "Additionalinformation": "The Training Centre is a dedicated facility for the training and development of firefighters and other emergency personnel within the County Durham and Darlington Fire and Rescue Service. It provides a range of training programs and exercises to ensure that staff are equipped with the necessary skills and knowledge to effectively respond to emergencies. The training center is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It serves as a vital resource for the ongoing professional development of fire service personnel.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/training_centre.jpg"
+            },
+            "video": {
+                "video_1": ""
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     },
     "TS": {
         "name": "Technical Services",
@@ -455,12 +679,29 @@
             "Easting": 430388,
             "Northing": 537800
         },
-        "phone": null,
-        "email": null,
         "Tenure": "Freehold",
         "Ownership": "County Durham and Darlington Fire and Rescue Service",
         "Purpose": [
-            "Training Centre"
-        ]
+            "Technical Services"
+        ],
+        "services": [
+            "Technical Services"
+        ],
+        "Additionalinformation": "The Technical Services facility is a dedicated site for the maintenance, repair, and servicing of fire service equipment and vehicles within the County Durham and Darlington Fire and Rescue Service. It ensures that all equipment is in optimal condition and ready for use during emergencies. The facility is owned by the County Durham and Darlington Fire and Rescue Service and is freehold. It plays a crucial role in supporting the operational readiness of the fire service by providing essential technical support.",
+        "Contactinformation": {
+            "phone": null,
+            "email": null
+        },
+        "media": {
+            "image": {
+                "image_1": "/assets/images/locations/technical_services.jpg"
+            },
+            "video": {
+                "video_1": ""
+            },
+            "map_area": {
+                "map_1": ""
+            }
+        }
     }
 }
