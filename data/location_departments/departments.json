@@ -1,0 +1,90 @@
+{
+    "departments": [
+        {
+            "name": "Community Safety",
+            "slug": "community-safety",
+            "emails": [
+                {
+                    "name": "Community Safety Enquiries",
+                    "email": "csenquiries@ddfire.gov.uk"
+                }
+            ],
+            "phones": [
+                {
+                    "name": "Community Safety Enquiries",
+                    "phone": "03452 234 221"
+                }
+            ]
+        },
+        {
+            "name": "Business Safety",
+            "slug": "business-safety",
+            "emails": [
+                {
+                    "name": "Business Safety Enquiries",
+                    "email": "csenquiries@ddfire.gov.uk"
+                }
+            ],
+            "phones": [
+                {
+                    "name": "Business Safety Enquiries",
+                    "phone": "03453 058 383"
+                }
+            ]
+        },
+        {
+            "name": "Emergancy Response",
+            "slug": "emergency-response"
+        },
+        {
+            "name": "Communication",
+            "slug": "communication"
+        },
+        {
+            "name": "Human Resources",
+            "slug": "human-resources"
+        },
+        {
+            "name": "Digital, Data and Technology",
+            "slug": "ddat",
+            "emails": [
+                {
+                    "name": "Digital, Data and Technology Enquiries",
+                    "email": "ddatsupport@ddfire.gov.uk"
+                }
+            ]
+        },
+        {
+            "name": "Health and Safety",
+            "slug": "health-and-safety"
+        },
+        {
+            "name": "Governace",
+            "slug": "governace"
+        },
+        {
+            "name": "Finance",
+            "slug": "finance"
+        },
+        {
+            "name": "Stores",
+            "slug": "stores"
+        },
+        {
+            "name": "Workshops",
+            "slug": "workshops"
+        },
+        {
+            "name": "Training and Development",
+            "slug": "training-and-development"
+        },
+        {
+            "name": "Fire Investigation",
+            "slug": "fire-investigation"
+        },
+        {
+            "name": "Risk Management",
+            "slug": "risk-management"
+        }
+    ]
+}

@@ -1,0 +1,452 @@
+{
+    "BC": {
+        "name": "Barnard Castle Emergency Services",
+        "address": "Wilson Street, Barnard Castle, DL12 8JU",
+        "postcode": "DL12 8JU",
+        "what3words": "///demotion.upstarts.order",
+        "location": {
+            "latitude": 54.533,
+            "longitude": -1.918,
+            "Easting": 405437,
+            "Northing": 516475
+        },
+        "phone": "01833 695 487",
+        "email": null,
+        "services": [
+            "Fire Station",
+            "Ambulance Station",
+            "Police Station",
+            "Mountain Rescue Station"
+        ],
+        "Crewing arrangement": [
+            "Retained Duty System (RDS)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "BA": {
+        "name": "Bishop Auckland Community Fire Station",
+        "address": "Green Lane, Bishop Auckland, DL14 6RS",
+        "postcode": "DL14 6RS",
+        "what3words": "///sleeps.cupboard.sweeper",
+        "location": {
+            "latitude": 54.666,
+            "longitude": -1.676,
+            "Easting": 420766,
+            "Northing": 527566
+        },
+        "phone": "01388 602 643",
+        "email": null,
+        "services": [
+            "Fire Station"
+        ],
+        "Crewing arrangement": [
+            "Retained Duty System (RDS)",
+            "Wholetime (WT)"
+        ],
+        "Tenure": "Leasehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "CO": {
+        "name": "Consett Fire Station",
+        "address": "Front Street, Consett, DH8 5QF",
+        "postcode": "DH8 5QF",
+        "what3words": "///sleeps.cupboard.sweeper",
+        "location": {
+            "latitude": 54.85,
+            "longitude": -1.83,
+            "Easting": 411623,
+            "Northing": 551595
+        },
+        "phone": "01207 502 500",
+        "email": null,
+        "services": [
+            "Fire Station"
+        ],
+        "Crewing arrangement": [
+            "Retained Duty System (RDS)",
+            "Wholetime (WT)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "CK": {
+        "name": "Crook Fire Station",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": 416119,
+            "longitude": 535208,
+            "Easting": null,
+            "Northing": null
+        },
+        "phone": null,
+        "email": null,
+        "services": [
+            "Fire Station"
+        ],
+        "Crewing arrangement": [
+            "Retained Duty System (RDS)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "DL": {
+        "name": "Darlington Fire Station",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 429216,
+            "Northing": 514290
+        },
+        "phone": null,
+        "email": null,
+        "services": [
+            "Fire Station",
+            "Ambulance Station"
+        ],
+        "Crewing arrangement": [
+            "Wholetime (WT)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "DH": {
+        "name": "Durham Fire Station",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 425578,
+            "Northing": 544304
+        },
+        "phone": null,
+        "email": null,
+        "services": [
+            "Fire Station",
+            "Ambulance Station",
+            "Mountain Rescue Station"
+        ],
+        "Crewing arrangement": [
+            "Wholetime (WT)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "HH": {
+        "name": "High Handenhold Fire Station",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 423420,
+            "Northing": 553140
+        },
+        "phone": null,
+        "email": null,
+        "services": [
+            "Fire Station"
+        ],
+        "Crewing arrangement": [
+            "Retained Duty System (RDS)",
+            "Wholetime (WT)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "MT": {
+        "name": "Middleton-in-Teesdale Fire Station",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 395086,
+            "Northing": 525187
+        },
+        "phone": null,
+        "email": null,
+        "services": [
+            "Fire Station",
+            "Ambulance Station"
+        ],
+        "Crewing arrangement": [
+            "Retained Duty System (RDS)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "NA": {
+        "name": "Newton Aycliffe Fire Station",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 427916,
+            "Northing": 525060
+        },
+        "phone": null,
+        "email": null,
+        "services": [
+            "Fire Station",
+            "Police Station"
+        ],
+        "Crewing arrangement": [
+            "Day Crewing (DC)",
+            "Retained Duty System (RDS)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "PL": {
+        "name": "Peterlee Fire Station",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 441048,
+            "Northing": 541066
+        },
+        "phone": null,
+        "email": null,
+        "services": [
+            "Fire Station"
+        ],
+        "Crewing arrangement": [
+            "Wholetime (WT)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "SH": {
+        "name": "Seaham Fire Station",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 442560,
+            "Northing": 548790
+        },
+        "phone": null,
+        "email": null,
+        "services": [
+            "Fire Station"
+        ],
+        "Crewing arrangement": [
+            "Day Crewing (DC)",
+            "Retained Duty System (RDS)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "SF": {
+        "name": "Sedgefield Fire Station",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 435450,
+            "Northing": 529100
+        },
+        "phone": null,
+        "email": null,
+        "services": [
+            "Fire Station"
+        ],
+        "Crewing arrangement": [
+            "Retained Duty System (RDS)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "SM": {
+        "name": "Spennymoor Fire Station",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 427201,
+            "Northing": 534957
+        },
+        "phone": null,
+        "email": null,
+        "services": [
+            "Fire Station"
+        ],
+        "Crewing arrangement": [
+            "Wholetime (WT)"
+        ],
+        "Tenure": "Leasehold",
+        "Ownership": "",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "SO": {
+        "name": "Stanhope Fire Station",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 399512,
+            "Northing": 539280
+        },
+        "phone": null,
+        "email": null,
+        "services": [
+            "Fire Station",
+            "Police Station"
+        ],
+        "Crewing arrangement": [
+            "Retained Duty System (RDS)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "WH": {
+        "name": "Wheatley Hill Fire Station",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 437202,
+            "Northing": 538428
+        },
+        "phone": null,
+        "email": null,
+        "services": [
+            "Fire Station"
+        ],
+        "Crewing arrangement": [
+            "Retained Duty System (RDS)"
+        ],
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Response Station"
+        ]
+    },
+    "HQ": {
+        "name": "Service Headquarters",
+        "address": null,
+        "postcode": null,
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 429935,
+            "Northing": 543639
+        },
+        "phone": null,
+        "email": null,
+        "Tenure": "Leasehold",
+        "Ownership": "",
+        "Purpose": [
+            "Headquarters",
+            "Control Room"
+        ]
+    },
+    "TR": {
+        "name": "Training Centre",
+        "address": "Bowburn Industrial Estate South, Bowburn, Co Durham",
+        "postcode": "DH6 5AD",
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 430034,
+            "Northing": 537808
+        },
+        "phone": null,
+        "email": null,
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Training Centre"
+        ],
+        "services": [
+            "Training Centre"
+        ]
+    },
+    "TS": {
+        "name": "Technical Services",
+        "address": "Bowburn Industrial Estate South, Bowburn, Co Durham",
+        "postcode": "DH6 5AD",
+        "what3words": null,
+        "location": {
+            "latitude": null,
+            "longitude": null,
+            "Easting": 430388,
+            "Northing": 537800
+        },
+        "phone": null,
+        "email": null,
+        "Tenure": "Freehold",
+        "Ownership": "County Durham and Darlington Fire and Rescue Service",
+        "Purpose": [
+            "Training Centre"
+        ]
+    }
+}
