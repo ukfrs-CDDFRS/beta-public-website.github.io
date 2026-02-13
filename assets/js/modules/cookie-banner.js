@@ -16,22 +16,24 @@ export class CookieBanner {
   }
 
   async init() {
-    // Load analytics config
-    await this.loadAnalyticsConfig();
-    // If consent already given, enable analytics if accepted and config allows
-    if (this.hasConsent()) {
-      if (this.getCookie('cookie_consent_analytics') === 'accepted') {
-        this.enableAnalytics();
+    // Load analytics config (but do not block banner on config)
+    this.loadAnalyticsConfig().then(() => {
+      // If consent already given, enable analytics if accepted and config allows
+      if (this.hasConsent()) {
+        if (this.getCookie('cookie_consent_analytics') === 'accepted') {
+          this.enableAnalytics();
+        }
+        // Banner should not show if consent is set
+        return;
       }
-      return;
-    }
-    // Show banner
-    this.element.hidden = false;
-    // Bind events for analytics
-    this.analyticsAccept?.addEventListener('click', () => this.handleChoice('analytics', 'accepted'));
-    this.analyticsReject?.addEventListener('click', () => this.handleChoice('analytics', 'rejected'));
-    // Hide confirmation
-    this.hideButton?.addEventListener('click', () => this.hideConfirmation());
+      // Show banner
+      this.element.hidden = false;
+      // Bind events for analytics
+      this.analyticsAccept?.addEventListener('click', () => this.handleChoice('analytics', 'accepted'));
+      this.analyticsReject?.addEventListener('click', () => this.handleChoice('analytics', 'rejected'));
+      // Hide confirmation
+      this.hideButton?.addEventListener('click', () => this.hideConfirmation());
+    });
   }
 
   async loadAnalyticsConfig() {
