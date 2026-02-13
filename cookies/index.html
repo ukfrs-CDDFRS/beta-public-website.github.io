@@ -391,50 +391,24 @@
     <h2 class="govuk-heading-l">Change your cookie settings</h2>
     <form id="cookie-preferences-form" novalidate>
       <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset">
+        <fieldset class="govuk-fieldset" aria-describedby="cookie-preferences-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
             Do you want to accept analytics cookies?
           </legend>
-          <div class="govuk-radios" data-module="govuk-radios">
+          <span id="cookie-preferences-hint" class="govuk-hint">We use analytics cookies to help us improve our website.</span>
+          <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="cookies-analytics" name="cookies[analytics]" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="cookies-analytics">
-                Yes
-              </label>
+              <input class="govuk-radios__input" id="cookies-analytics-yes" name="cookies-analytics" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="cookies-analytics-yes">Yes</label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="cookies-analytics-2" name="cookies[analytics]" type="radio" value="no" checked>
-              <label class="govuk-label govuk-radios__label" for="cookies-analytics-2">
-                No
-              </label>
+              <input class="govuk-radios__input" id="cookies-analytics-no" name="cookies-analytics" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="cookies-analytics-no">No</label>
             </div>
           </div>
         </fieldset>
       </div>
-      <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-            Do you want to accept communications and marketing cookies?
-          </legend>
-          <div class="govuk-radios" data-module="govuk-radios">
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="cookies-marketing" name="cookies[marketing]" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="cookies-marketing">
-                Yes
-              </label>
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="cookies-marketing-2" name="cookies[marketing]" type="radio" value="no" checked>
-              <label class="govuk-label govuk-radios__label" for="cookies-marketing-2">
-                No
-              </label>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-      <button type="submit" class="govuk-button" data-module="govuk-button">
-        Save cookie settings
-      </button>
+      <button type="submit" class="govuk-button" data-module="govuk-button">Save cookie settings</button>
     </form>
   </div>
 </div>
@@ -498,9 +472,8 @@ function getCookie(name) {
 <p>// On page load, set radio to match cookie
 document.addEventListener('DOMContentLoaded', function() {
 const analyticsConsent = getCookie('cookie_consent_analytics');
-const yesRadio = document.getElementById('cookies-analytics');
-const noRadio = document.getElementById('cookies-analytics-2');
-// Clear both first
+const yesRadio = document.getElementById('cookies-analytics-yes');
+const noRadio = document.getElementById('cookies-analytics-no');
 yesRadio.checked = false;
 noRadio.checked = false;
 if (analyticsConsent === 'accepted') {
@@ -511,48 +484,18 @@ noRadio.checked = true;
 });</p>
 <p>document.getElementById('cookie-preferences-form')?.addEventListener('submit', function(e) {
 e.preventDefault();
-// Set cookie based on selection
-const analyticsValue = document.querySelector('input[name=&quot;cookies[analytics]&quot;]:checked')?.value;
-const marketingValue = document.querySelector('input[name=&quot;cookies[marketing]&quot;]:checked')?.value;
-// Compose the policy object as per GOV.UK pattern
-const policy = {
-analytics: analyticsValue === 'yes',
-marketing: marketingValue === 'yes',
-essential: true
-};
-document.cookie = 'design_system_cookies_policy=' + encodeURIComponent(JSON.stringify(policy)) + '; max-age=31536000; path=/; SameSite=Lax';
-// For compatibility, also set the old cookie_consent_analytics cookie
+const analyticsValue = document.querySelector('input[name=&quot;cookies-analytics&quot;]:checked')?.value;
+if (!analyticsValue) return;
 if (analyticsValue === 'yes') {
 document.cookie = 'cookie_consent_analytics=accepted; max-age=31536000; path=/; SameSite=Lax';
-} else if (analyticsValue === 'no') {
+} else {
 document.cookie = 'cookie_consent_analytics=rejected; max-age=31536000; path=/; SameSite=Lax';
 }
-// Update radio state after setting cookie
-const yesRadio = document.getElementById('cookies-analytics');
-const noRadio = document.getElementById('cookies-analytics-2');
-yesRadio.checked = analyticsValue === 'yes';
-noRadio.checked = analyticsValue === 'no';
 // Show notification
 var notification = document.getElementById('cookie-notification');
 if (notification) {
 notification.style.display = 'block';
 notification.scrollIntoView({behavior: 'smooth'});
-}
-// Hide the cookie banner if present
-const banner = document.querySelector('[data-module=&quot;govuk-cookie-banner&quot;]');
-if (banner) {
-banner.hidden = true;
-}
-// Show confirmation banner if present (matches banner logic)
-const confirmation = document.querySelector('[data-module=&quot;govuk-cookie-confirmation&quot;]');
-if (confirmation) {
-confirmation.hidden = false;
-const msg = confirmation.querySelector('[data-cookie-confirmation-message]');
-if (msg) {
-msg.textContent = analyticsValue === 'yes' ?
-'You’ve accepted analytics cookies.' :
-'You’ve rejected analytics cookies.';
-}
 }
 });
 </script></p>
