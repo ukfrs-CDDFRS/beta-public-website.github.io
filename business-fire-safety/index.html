@@ -65,14 +65,26 @@
     </div>
     
     <div class="govuk-button-group">
-      <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="accept">
-        Accept analytics cookies
-      </button>
-      <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="reject">
-        Reject analytics cookies
-      </button>
-      <a class="govuk-link" href="/beta-public-website/cookies/">View cookies</a>
-    </div>
+        <form id="cookie-consent-form">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">Do you want to accept analytics cookies?</legend>
+            <div class="govuk-button-group">
+              <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="analytics-yes">Yes</button>
+              <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="analytics-no">No</button>
+            </div>
+          </fieldset>
+          <fieldset class="govuk-fieldset govuk-!-margin-top-4">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">Do you want to accept communications and marketing cookies?</legend>
+            <div class="govuk-button-group">
+              <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="marketing-yes">Yes</button>
+              <button type="button" class="govuk-button" data-module="govuk-button" data-cookie-choice="marketing-no">No</button>
+            </div>
+          </fieldset>
+        </form>
+        <div class="govuk-button-group govuk-!-margin-top-4">
+          <a class="govuk-link" href="/beta-public-website/cookies/">View cookies</a>
+        </div>
+      </div>
   </div>
 </div>
 
